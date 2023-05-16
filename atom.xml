@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-16T15:01:01.489Z</updated>
+  <updated>2023-05-16T15:24:28.128Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/05/15/%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9/"/>
     <id>http://example.com/2023/05/15/%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9/</id>
     <published>2023-05-15T11:32:35.000Z</published>
-    <updated>2023-05-16T15:01:01.489Z</updated>
+    <updated>2023-05-16T15:24:28.128Z</updated>
     
     
       
@@ -33,6 +33,8 @@
       
     
     
+    
+    <category term="杂项" scheme="http://example.com/categories/%E6%9D%82%E9%A1%B9/"/>
     
     
   </entry>

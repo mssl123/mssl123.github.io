@@ -75,7 +75,11 @@
     <div class="article-meta">
       <a href="/2023/05/15/%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9/" class="article-date">
   <time datetime="2023-05-15T11:32:35.000Z" itemprop="datePublished">2023-05-15</time>
-</a>   
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a>
+  </div>
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -119,7 +123,7 @@
 </ul>
 <h3 id="hexo与github-page"><a href="#hexo与github-page" class="headerlink" title="hexo与github page"></a>hexo与github page</h3><ol>
 <li>创建仓库:仓库名格式 – github用户名.github.io</li>
-<li>配置ssh<br> git config –global user.name “用户名”<br> git config –global user.email “邮箱地址”<br> ssh-keygen -t rsa -C “邮箱”<br> C盘&#x2F;用户&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa.pub<br> ssh可以针对一个仓库使用<br> ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;</a></li>
+<li>配置ssh<br> git config –global user.name “用户名”<br> git config –global user.email “邮箱地址”<br> ssh-keygen -t rsa -C “邮箱”<br> C盘&#x2F;用户&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa.pub<br> ssh可以针对一个仓库使用<br> ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#x69;&#x74;&#104;&#117;&#98;&#46;&#x63;&#111;&#109;">&#103;&#105;&#116;&#64;&#103;&#x69;&#x74;&#104;&#117;&#98;&#46;&#x63;&#111;&#109;</a></li>
 <li>修改配置文件 blog&#x2F;_config.yaml<br>文件末尾:<br> type: git<br> repo: <a target="_blank" rel="noopener" href="https://github.com/github%E7%94%A8%E6%88%B7%E5%90%8D/github%E7%94%A8%E6%88%B7%E5%90%8D.github.io.git">https://github.com/github用户名/github用户名.github.io.git</a><br> branch: master</li>
 <li>安装部署插件  npm install hexo-deployer-git –save</li>
 <li>generate and deploy</li>
