@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-05-16T15:01:01.489Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>blog创建流程</title>
+    <link href="http://example.com/2023/05/15/%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9/"/>
+    <id>http://example.com/2023/05/15/%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9/</id>
+    <published>2023-05-15T11:32:35.000Z</published>
+    <updated>2023-05-16T15:01:01.489Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;配环境&quot;&gt;&lt;a href=&quot;#配环境&quot; class=&quot;headerlink&quot; title=&quot;配环境&quot;&gt;&lt;/a&gt;配环境&lt;/h1&gt;&lt;p&gt;git&lt;br&gt;Node.js:hexo基于Node.js驱动&lt;br&gt;nmp:</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2023/05/15/hello-world/"/>
+    <id>http://example.com/2023/05/15/hello-world/</id>
+    <published>2023-05-15T11:27:03.134Z</published>
+    <updated>2023-05-15T11:27:03.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

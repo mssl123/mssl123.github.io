@@ -41,7 +41,8 @@
           font-size: 1.6rem;
         }
       </style>
-    </head>
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
   </html>
 </html>
 
@@ -80,7 +81,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">262</span>
+            <span class="post-count">292</span>
         </span>
     </span>
 
@@ -118,12 +119,13 @@
 </ul>
 <h3 id="hexo与github-page"><a href="#hexo与github-page" class="headerlink" title="hexo与github page"></a>hexo与github page</h3><ol>
 <li>创建仓库:仓库名格式 – github用户名.github.io</li>
-<li>配置ssh<br> git config –global user.name “用户名”<br> git config –global user.email “邮箱地址”<br> ssh-keygen -t rsa -C “邮箱”<br> C盘&#x2F;用户&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa.pub<br> ssh可以针对一个仓库使用<br> ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#x6d;">&#103;&#105;&#x74;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#x6d;</a></li>
+<li>配置ssh<br> git config –global user.name “用户名”<br> git config –global user.email “邮箱地址”<br> ssh-keygen -t rsa -C “邮箱”<br> C盘&#x2F;用户&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa.pub<br> ssh可以针对一个仓库使用<br> ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;</a></li>
 <li>修改配置文件 blog&#x2F;_config.yaml<br>文件末尾:<br> type: git<br> repo: <a target="_blank" rel="noopener" href="https://github.com/github%E7%94%A8%E6%88%B7%E5%90%8D/github%E7%94%A8%E6%88%B7%E5%90%8D.github.io.git">https://github.com/github用户名/github用户名.github.io.git</a><br> branch: master</li>
 <li>安装部署插件  npm install hexo-deployer-git –save</li>
 <li>generate and deploy</li>
 <li>更改github仓库page所使用的分支为master</li>
 <li>&#x3D;&#x3D;注意修改完后需要等待几分钟网页才能完成更改&#x3D;&#x3D;</li>
+<li>&#x3D;&#x3D;上传时打开文件、正打开网页、未作修改似乎都会导致上传失败&#x3D;&#x3D;</li>
 </ol>
  
       <!-- reward -->
