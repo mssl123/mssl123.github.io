@@ -52,4 +52,27 @@
         <category>杂项</category>
       </categories>
   </entry>
+  <entry>
+    <title>Markdown</title>
+    <url>/2023/05/17/Markdown/</url>
+    <content><![CDATA[<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><ul>
+<li>#空格 &#x2F;&#x2F;标题</li>
+<li>两边* &#x2F;&#x2F;斜体</li>
+<li>两边** &#x2F;&#x2F;加粗</li>
+<li>数字. </li>
+<li>-空格</li>
+<li>大于符号 &#x2F;&#x2F;引用</li>
+<li>&#96;&#96; &#x2F;&#x2F;代码</li>
+<li>分隔线***</li>
+<li>[链接描述]接(地址 “连接title”)</li>
+<li>&lt;&gt;将URL和email变成可点击的链接</li>
+<li>![图片描述]接(图片地址 “title”)</li>
+<li>若要单独使用上述符号,在这之前加\</li>
+</ul>
+<h1 id="官方教程"><a href="#官方教程" class="headerlink" title="官方教程"></a>官方教程</h1><p><a href="https://markdown.com.cn/basic-syntax/">Markdown基本语法</a></p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+  </entry>
 </search>
