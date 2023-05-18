@@ -75,4 +75,13 @@
         <category>Markdown</category>
       </categories>
   </entry>
+  <entry>
+    <title>单片机杂项</title>
+    <url>/2023/05/18/%E5%8D%95%E7%89%87%E6%9C%BA%E6%9D%82%E9%A1%B9/</url>
+    <content><![CDATA[<h1 id="烧录程序"><a href="#烧录程序" class="headerlink" title="烧录程序"></a>烧录程序</h1><h2 id="stm32f103C8T6"><a href="#stm32f103C8T6" class="headerlink" title="stm32f103C8T6"></a>stm32f103C8T6</h2><p>串口：烧录前boot0置1，boot1置0；烧录后复位<br>stlink：装驱动时要将所有文件下载完全再安装</p>
+]]></content>
+      <categories>
+        <category>单片机</category>
+      </categories>
+  </entry>
 </search>

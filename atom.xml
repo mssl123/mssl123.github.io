@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-17T06:37:30.983Z</updated>
+  <updated>2023-05-18T10:06:21.815Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单片机杂项</title>
+    <link href="http://example.com/2023/05/18/%E5%8D%95%E7%89%87%E6%9C%BA%E6%9D%82%E9%A1%B9/"/>
+    <id>http://example.com/2023/05/18/%E5%8D%95%E7%89%87%E6%9C%BA%E6%9D%82%E9%A1%B9/</id>
+    <published>2023-05-18T10:00:43.000Z</published>
+    <updated>2023-05-18T10:06:21.815Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;烧录程序&quot;&gt;&lt;a href=&quot;#烧录程序&quot; class=&quot;headerlink&quot; title=&quot;烧录程序&quot;&gt;&lt;/a&gt;烧录程序&lt;/h1&gt;&lt;h2 id=&quot;stm32f103C8T6&quot;&gt;&lt;a href=&quot;#stm32f103C8T6&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="单片机" scheme="http://example.com/categories/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Markdown</title>
