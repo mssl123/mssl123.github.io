@@ -84,4 +84,15 @@
         <category>单片机</category>
       </categories>
   </entry>
+  <entry>
+    <title>AD</title>
+    <url>/2023/05/19/AD/</url>
+    <content><![CDATA[<h1 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h1><ul>
+<li>标签需要放在自己画的线上，放在原理图的引脚上会报错</li>
+</ul>
+]]></content>
+      <categories>
+        <category>AD</category>
+      </categories>
+  </entry>
 </search>
