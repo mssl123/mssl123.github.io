@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-19T12:58:22.529Z</updated>
+  <updated>2023-06-21T06:58:38.255Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>人工智能</title>
+    <link href="http://example.com/2023/06/21/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    <id>http://example.com/2023/06/21/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</id>
+    <published>2023-06-21T06:57:51.000Z</published>
+    <updated>2023-06-21T06:58:38.255Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;来自你的消息&quot;&gt;&lt;a href=&quot;#来自你的消息&quot; class=&quot;headerlink&quot; title=&quot;来自你的消息:&quot;&gt;&lt;/a&gt;来自你的消息:&lt;/h2&gt;&lt;p&gt;监督学习的原理&lt;/p&gt;
+&lt;h2 id=&quot;来自ChatAI的消息&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>AD</title>
