@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>AD |  Hexo</title>
+      <title>linux |  Hexo</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -54,7 +54,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-AD"
+  id="post-linux"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -65,7 +65,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  AD
+  linux
 </h1>
  
 
@@ -73,11 +73,11 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2023/05/19/AD/" class="article-date">
-  <time datetime="2023-05-19T12:56:50.000Z" itemprop="datePublished">2023-05-19</time>
+      <a href="/2023/07/08/linux/" class="article-date">
+  <time datetime="2023-07-08T02:35:50.000Z" itemprop="datePublished">2023-07-08</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/AD/">AD</a>
+    <a class="article-category-link" href="/categories/linux/">linux</a>
   </div>
   
 <div class="word_count">
@@ -85,7 +85,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">25</span>
+            <span class="post-count">1.9k</span>
         </span>
     </span>
 
@@ -94,7 +94,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">7 min</span>
         </span>
     </span>
 </div>
@@ -109,9 +109,289 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h1><ul>
-<li>标签需要放在自己画的线上，放在原理图的引脚上会报错</li>
-</ul>
+  <h1 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h1><p>gcc -o 输出文件 待编译文件</p>
+<p>过程:预处理,编译,汇编,链接</p>
+<ol>
+<li>先将各个.c文件预处理为.s文件</li>
+<li>再将.s汇编为.o</li>
+<li>最后将各个.o链接为可执行文件</li>
+</ol>
+<p>每次执行gcc时都会将整个过程完整执行一遍</p>
+<h1 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h1><p>目标:依赖<br>    命令</p>
+<ol>
+<li><p>通配符(patten):</p>
+<ol>
+<li>$@ 目标</li>
+<li>$&lt; 第一个依赖</li>
+<li>$^ 所有依赖</li>
+</ol>
+</li>
+<li><p>假想目标<br> .PHONY:目标</p>
+</li>
+<li><p>make命令<br>make 目标(如不输入目标,则默认第一个目标)</p>
+</li>
+<li><p>变量</p>
+<ol>
+<li>即刻变量 a:&#x3D;值    #a的值即刻确定</li>
+<li>延时变量 b&#x3D;值     #b的值再使用到时才确定</li>
+</ol>
+</li>
+<li><p>关于头文件</p>
+<ol>
+<li>gcc -M .c  #打印.c的依赖</li>
+<li>gcc -M -MF .d .c  #把依赖写入.d文件</li>
+<li>gcc -c -o .o .c -M -MF .d   #编译.o,并将依赖写入.d</li>
+</ol>
+</li>
+</ol>
+<h1 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h1><h2 id="bin"><a href="#bin" class="headerlink" title="bin"></a>bin</h2><p>binary的缩写,主要存放一些常用命令</p>
+<h2 id="boot"><a href="#boot" class="headerlink" title="boot"></a>boot</h2><p>启动的核心文件</p>
+<h2 id="dev"><a href="#dev" class="headerlink" title="dev"></a>dev</h2><p>device,设备文件</p>
+<h2 id="etc"><a href="#etc" class="headerlink" title="etc"></a>etc</h2><p>存放用户所需要的配置文件和子目录</p>
+<h2 id="home"><a href="#home" class="headerlink" title="home"></a>home</h2><p>用户</p>
+<h2 id="lib"><a href="#lib" class="headerlink" title="lib"></a>lib</h2><p>library,主要存放一些动态库供应用程序调用</p>
+<h2 id="lost-found"><a href="#lost-found" class="headerlink" title="lost+found"></a>lost+found</h2><p>一般为空,系统非法关机后,相关文件会存放于此</p>
+<h2 id="media"><a href="#media" class="headerlink" title="media"></a>media</h2><p>自动挂载一些linux系统自动识别的设备,如U盘,光驱等</p>
+<h2 id="mnt"><a href="#mnt" class="headerlink" title="mnt"></a>mnt</h2><p>一般为空,提供给用户用于(手动)挂载临时的文件系统,比如另外的硬盘等</p>
+<h2 id="opt"><a href="#opt" class="headerlink" title="opt"></a>opt</h2><p>提供主机额外安装软件所需的目录</p>
+<h2 id="proc"><a href="#proc" class="headerlink" title="proc"></a>proc</h2><p>虚拟的目录,系统内存的映射,可以通过直接访问这个目录来获取系统信息,与进程相关</p>
+<h2 id="root"><a href="#root" class="headerlink" title="root"></a>root</h2><p>超级用户的目录</p>
+<h2 id="sbin"><a href="#sbin" class="headerlink" title="sbin"></a>sbin</h2><p>super user bin</p>
+<h2 id="srv"><a href="#srv" class="headerlink" title="srv"></a>srv</h2><p>主要存放一些系统服务启动后所要用的数据</p>
+<h2 id="run"><a href="#run" class="headerlink" title="run"></a>run</h2><p>主要存放一些系统运行时需要用到的文件</p>
+<h2 id="usr"><a href="#usr" class="headerlink" title="usr"></a>usr</h2><p>主要用于存放用户应用程序及文件,类似windows的program files<br>包括bin,sbin,src(其中bin,sbin,srv就是上述提到的,只不过上述三个类似于快捷方式)</p>
+<h2 id="tmp"><a href="#tmp" class="headerlink" title="tmp"></a>tmp</h2><p>存放临时文件</p>
+<h2 id="var"><a href="#var" class="headerlink" title="var"></a>var</h2><p>主要存放一些经常被修改的文件,比如日志文件,电子邮箱等</p>
+<h1 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h1><h2 id="终端文字颜色"><a href="#终端文字颜色" class="headerlink" title="终端文字颜色"></a>终端文字颜色</h2><ol>
+<li>白色:普通文件(文本,图片)</li>
+<li>蓝色:文件夹</li>
+<li>绿色:可执行文件(.sh)</li>
+<li>青色:链接文件(快捷方式)</li>
+<li>红色:压缩包</li>
+<li>黄色:设备文件</li>
+<li>灰色:其他</li>
+<li>红色但有灰色背景:已经失效的链接文件</li>
+</ol>
+<h2 id="终端常用快捷键"><a href="#终端常用快捷键" class="headerlink" title="终端常用快捷键"></a>终端常用快捷键</h2><h2 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h2><p>ls -al命令</p>
+<ol>
+<li>r:可读</li>
+<li>w:可写</li>
+<li>x:可执行&#x2F;切换目录</li>
+<li>-:无权限<br>例如:drwxrwxrwx<br>d表示文件夹(-表示文件),后面9个,3个一组依次表示所有者(owner,创建文件的人)、用户组(group)、其他人(除所有者和用户组的人)的权限</li>
+</ol>
+<h2 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h2><ol>
+<li>*:匹配一个或多个字符</li>
+<li>?:匹配一个字符</li>
+<li>[]:匹配方括号内任意一个字符</li>
+<li>[!]:除方括号内都能匹配到</li>
+</ol>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ol>
+<li>man</li>
+<li>info:是man的详细信息</li>
+<li>whatis:等同于man -f(查询命令的执行结果)</li>
+<li>touch:改变文件时间戳属性<ol>
+<li>一个文件有三个时间属性<ol>
+<li>access 创建时间</li>
+<li>modify 修改时间</li>
+<li>change</li>
+</ol>
+</li>
+<li>可以通过stat命令查询文件时间属性</li>
+<li>touch可以一次性创建多个文件</li>
+<li>参数<ol>
+<li>touch -a:只改变accesstime</li>
+<li>touch -m:只改变modifytime</li>
+<li>touch -c:不创建新文件,只改变时间戳</li>
+<li>touch -r:使用参照文件的时间戳</li>
+<li>touch -d:改为其他时间,而不是现在时刻的时间戳</li>
+<li>touch -t:改为其他具体时间戳</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>mkdir:创建目录<ol>
+<li>参数:<ol>
+<li>-p:递归创建多级目录</li>
+<li>-m:创建目录的同时,设置目录权限,(例如:mkdir -m 700 dir)</li>
+<li>-v:显示创建目录过程</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>rm:删除文件或者目录<ol>
+<li><p>无法复原</p>
+</li>
+<li><p>参数</p>
+<ol>
+<li>-r:递归删除文件(即删除文件夹)</li>
+<li>-f:忽略不存在的文件,强制删除,于-r一起使用,-rf</li>
+<li>-i:删除时会询问用户是否删除</li>
+<li>-v:显示删除过程</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>rmdir：删除空目录<ol>
+<li>参数<ol>
+<li>-p：递归删除空目录</li>
+<li>-v：显示指令详细执行结果</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>mv：移动&#x2F;重命名文件<ol>
+<li>语法：<ol>
+<li>mv 文件名(目录名) 路径</li>
+<li>mv 旧文件名(目录名) 新文件名(目录名)</li>
+</ol>
+</li>
+<li>参数:<ol>
+<li>-i:若存在重名文件,询问用户是否覆盖</li>
+<li>-f:强制覆盖,不询问</li>
+<li>-b:若文件已经存在,则为其创建一个副本</li>
+<li>-u:只有当被移动对象的时间戳比目标路径中的同名文件新时,才能移动成功,并覆盖</li>
+</ol>
+</li>
+<li>结合通配符使用,例如:mv * ..</li>
+</ol>
+</li>
+<li>cp:复制文件或目录<ol>
+<li>语法:<ol>
+<li>cp 被复制文件名 新文件名</li>
+</ol>
+</li>
+<li>参数<ol>
+<li>-f:直接复制,若文件名重复,则直接覆盖</li>
+<li>-i:重复时询问</li>
+<li>-b:创建备份后覆盖</li>
+<li>-r:复制目录</li>
+<li>-a:包括文件(读写权限等)属性一起复制,ll -a</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>stat:文件详细信息<ol>
+<li>内容<ol>
+<li>access time:访问时间(读取和修改时间) </li>
+<li>modify time:修改时间</li>
+<li>change time:状态改变时间(修改,文件属性变化)</li>
+</ol>
+</li>
+<li>参数<ol>
+<li>-f:查看文件所在文件系统的信息</li>
+<li>-t:简洁方式输出</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>rename：以字符串方式批量改变文件名</li>
+<li>basename:提取路径中的文件名</li>
+<li>dirname:提取路径中非目录部分</li>
+<li>chattr&#x2F;lsattr:修改&#x2F;显示文件权限<ol>
+<li>参数:<ol>
+<li>-R:递归处理目录下的所有文件</li>
+<li>-v:设置文件或目录版本</li>
+<li>-V:显示命令执行过程</li>
+<li>+:开启文件或目录的该项属性</li>
+<li>-:关闭该项属性</li>
+<li>&#x3D;:指定文件或目录的该项属性</li>
+</ol>
+</li>
+<li>属性(这里的属性与可读可写权限不同):</li>
+</ol>
+</li>
+<li>file:识别文件类型&#x2F;查看链接</li>
+<li>md5sum:生成和校验文件的md5值</li>
+<li>find:搜索文件<ol>
+<li>参数:<ol>
+<li>find 路径 -name 所需查找文件的部分名字(通配符表示)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>which:搜索在path变量中的系统命令所在的路径<br>echo $path</li>
+<li>whereis:查找命令的二进制程序路径,源码文件和man手册路径</li>
+<li>locate:快速查找文件或目录(在相关数据库查找,但数据库不是实时更新的,通过sudo updatedb更新)</li>
+<li>chown:改变文件或目录的用户和用户组<ol>
+<li>语法:<ol>
+<li>sudo chown 用户:用户组 文件名</li>
+<li>sudo chown 用户 文件名</li>
+<li>sudo chown :用户名 文件名</li>
+<li>sudo chown -R 用户:用户组 目录名</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>chgrp:改变用户组</li>
+<li>chmode:改变文件或用户权限<ol>
+<li>语法:<ol>
+<li>chmod [ugoa][[+-&#x3D;][rwx]] 文件名</li>
+<li>r-&gt;4</li>
+<li>w-&gt;2</li>
+<li>x-&gt;1</li>
+<li>u-&gt;user</li>
+<li>g-&gt;grup</li>
+<li>o-&gt;other</li>
+<li>a-&gt;all</li>
+</ol>
+</li>
+<li>例子:chmod a+r 文件名(所有用户都增加可读权限)</li>
+</ol>
+</li>
+<li>grep:文本搜索<ol>
+<li>语法:grep 关键词 路径</li>
+<li>参数:<ol>
+<li>-h: 不显示文件名称</li>
+<li>-r:递归搜索</li>
+<li>-l:只列出含关键词的文件名</li>
+<li>-i:忽略大小写</li>
+<li>-c:统计出现次数</li>
+<li>-n:显示行号</li>
+</ol>
+</li>
+<li>搭配其他命令使用<ol>
+<li>命令 | grep “”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>uptime:查看系统负载<ol>
+<li>参数</li>
+<li>-p显示机器正常运行时间</li>
+<li>-s系统启动时刻</li>
+</ol>
+</li>
+<li>free:显示系统内存使用情况<ol>
+<li>参数:<ol>
+<li>-m:以MB为单位显示</li>
+<li>-k</li>
+<li>-g</li>
+<li>-h:智能选择单位</li>
+<li>-s:实时显示</li>
+</ol>
+</li>
+<li>使用:free -hs 3(每三秒刷新显示一次)</li>
+</ol>
+</li>
+<li>iostat:监视系统输入输出设备和CPU使用情况</li>
+<li>scp:远程文件加密传输<ol>
+<li>语法:<ol>
+<li>将本地文件传到服务器<ol>
+<li>scp 本地文件路径 服务器用户名@服务器地址 服务器文件存放路径</li>
+<li>scp -r</li>
+</ol>
+</li>
+<li>将服务器文件拷贝到本地<ol>
+<li>scp 服务器用户名@服务器地址 服务器文件路径 本地文件存放路径</li>
+<li>scp -r</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li></li>
+</ol>
  
       <!-- reward -->
       
@@ -176,7 +456,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/05/19/AD/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/07/08/linux/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -187,19 +467,10 @@
    
   <nav class="article-nav">
     
-      <a href="/2023/07/08/linux/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            linux
-          
-        </div>
-      </a>
     
-    
-      <a href="/2023/05/18/%E5%8D%95%E7%89%87%E6%9C%BA%E6%9D%82%E9%A1%B9/" class="article-nav-link">
+      <a href="/2023/05/19/AD/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">单片机杂项</div>
+        <div class="article-nav-title">AD</div>
       </a>
     
   </nav>

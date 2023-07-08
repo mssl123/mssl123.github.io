@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-19T12:58:22.529Z</updated>
+  <updated>2023-07-08T02:41:48.784Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux</title>
+    <link href="http://example.com/2023/07/08/linux/"/>
+    <id>http://example.com/2023/07/08/linux/</id>
+    <published>2023-07-08T02:35:50.000Z</published>
+    <updated>2023-07-08T02:41:48.784Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;gcc&quot;&gt;&lt;a href=&quot;#gcc&quot; class=&quot;headerlink&quot; title=&quot;gcc&quot;&gt;&lt;/a&gt;gcc&lt;/h1&gt;&lt;p&gt;gcc -o 输出文件</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="http://example.com/categories/linux/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>AD</title>
